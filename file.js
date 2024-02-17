@@ -123,3 +123,50 @@ for(const item of perguntas){
     // coloca a pergunta na tela
     quiz.appendChild(quizItem); 
 }
+
+
+const person = [
+    {
+        name: 'Jairo',
+        age: 50,
+        skill: [
+                'HTML',
+                'CSS',
+                'JavaScript'
+        ]
+    },
+    {
+        name: 'Pedro',
+        age: 8,
+        skill: [
+                'Stumble Guys',
+                'Minecraft',
+                'FIFA'
+        ]
+    }
+]
+
+//
+const res = document.querySelector('.res');
+res.textContent = '';
+let nn = 0;
+const p = document.createElement('p');
+//p.innerHTML = 'Hello MUNDO';
+
+
+
+
+for(item of person){
+    nn++;
+    //res.innerHTML += nn + '-' + item.name + '<br>';
+    p.innerHTML += `${nn}  ${item.name} <br> ${item.age} <br> ${item.skill} <br> <br>`;
+    res.appendChild(p);
+
+
+    // console.log(item.name);
+    // console.log(item.age);
+    // console.log(item.skill);
+    
+}
+
+
