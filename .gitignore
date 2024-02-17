@@ -1,0 +1,32 @@
+# Arquivos de configuração
+.DS_Store
+npm-debug.log
+
+# Dependências
+/node_modules
+
+# Arquivos de compilação
+/dist
+
+# Arquivos de ambiente
+.env
+
+# Logs
+*.log
+
+# Arquivos temporários
+.tmp
+.temp
+
+# Arquivos de build
+/build
+
+# Arquivos de cache
+/.cache
+
+# Arquivos de teste
+/coverage
+
+# Arquivos de IDE
+.idea
+.vscode
