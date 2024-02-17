@@ -2,8 +2,10 @@
 .DS_Store
 npm-debug.log
 
+
 # Dependências
 /node_modules
+
 
 # Arquivos de compilação
 /dist
