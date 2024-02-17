@@ -148,25 +148,23 @@ const person = [
 
 //
 const res = document.querySelector('.res');
+const ul = document.createElement('ul');
 res.textContent = '';
-let nn = 0;
-const p = document.createElement('p');
-//p.innerHTML = 'Hello MUNDO';
+for(let i = 0; i < person.length; i++){
+    const li = document.createElement('li');
+    li.innerHTML = `
+        ${i+1} ::: ${person[i].name} 
+        <sup> ${person[i].age} </sup> `;
 
-
-
-
-for(item of person){
-    nn++;
-    //res.innerHTML += nn + '-' + item.name + '<br>';
-    p.innerHTML += `${nn}  ${item.name} <br> ${item.age} <br> ${item.skill} <br> <br>`;
-    res.appendChild(p);
-
-
-    // console.log(item.name);
-    // console.log(item.age);
-    // console.log(item.skill);
-    
+        for(let j = 0; j < person[i].skill.length; j++){
+            const small = document.createElement('small');    
+            small.innerHTML = person[i].skill[j];
+            li.appendChild(small);
+        } 
+    ul.appendChild(li);
 }
+
+res.appendChild(ul);
+
 
 
